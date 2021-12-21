@@ -13,9 +13,9 @@ const App = () => {
     return ( <div>
         <div>
             {/* <Home /> 
-            <Clones />
+            <Clones cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />
             <Contact />
-            <Places />  */}
+            <Places cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />  */}
             <Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/> 
         </div>
     </div>)
