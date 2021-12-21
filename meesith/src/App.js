@@ -1,10 +1,12 @@
 import Home from "./screen/Home";
+import Navbar from "./components/Navbar";
 import ReactDOM from "react-dom";
 import './App.css';
 
 const App = () => {
     return(
     <div>
+      <Navbar/>
       <Home/>
     </div>)
 }
