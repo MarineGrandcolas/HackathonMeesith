@@ -2,14 +2,16 @@ import {
     useState,
     useEffect
 } from "react"
+import Card from "./Card"
 
-const Characters = () => {
+
+const SliderData = () => {
     const [characters, setCharacters] = useState([])
     const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         const getData = () => {
-            fetch("https://miadil.github.io/starwars-api/api")
+            fetch("https://raw.githubusercontent.com/Miadil/starwars-api/master/api/all.json")
                 .then((res) => res.json())
                 .then((res) => {
                     console.log(res)
@@ -40,4 +42,4 @@ const Characters = () => {
 		</div>
 	)
 }
-export default Characters
+export default SliderData
