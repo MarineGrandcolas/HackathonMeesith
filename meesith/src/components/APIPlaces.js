@@ -1,12 +1,12 @@
-import Card from "./Card"
-
-import "./APIPlaces.css"
+import Card from "./Card";
+import {useState} from 'react';
+import "./APIPlaces.css";
 
 const Places = [
 	{
 	"id":"1",
 	"name":"Coruscant",      
-	"image":"https://static.wikia.nocookie.net/frstarwars/images/c/c7/Senate_District_ROTS.png/revision/latest?cb=20161206074317",
+	"image":"https://www.pop-up-urbain.com/wp-content/uploads/2017/05/Coruscant_landscape_RotS-800x435.png",
 	"description":"Oecuménopole",
 	},
 
@@ -41,7 +41,7 @@ const Places = [
 	{
 	"id":"6",
 	"name":"Kamino",  
-	"image":"https://static.wikia.nocookie.net/starwars/images/2/2c/TipocaCity-CC.png/revision/latest?cb=20130505022521",
+	"image":"https://www.journaldugeek.com/wp-content/blogs.dir/1/files/2017/04/Water.jpg",
 	"description":"Océan",
 	},
 
@@ -75,6 +75,13 @@ const Places = [
 ]
 
 const Planets = () => {
+	const [showLongVersion, setShowLongVersion] = useState(false);
+
+	const display = (e) => {
+		e.preventDefault();
+				setShowLongVersion(!showLongVersion)
+				console.log(showLongVersion)
+	}
 	return (
 		<div>
 			Planets !
