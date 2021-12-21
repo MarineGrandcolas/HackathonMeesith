@@ -2,11 +2,11 @@ import React from "react";
 import { useState } from 'react'
 import "../components/Cart.css" 
 
-function Cart() {
+function Cart({cart, updateCart, cartPlace, updateCartPlace}) {
     const clonePrice = 8
     const placePrice = 5
-    const [cart, updateCart] = useState(0)
-    const [cartPlace, updateCartPlace] = useState(0)
+    // const [cart, updateCart] = useState(0)
+    // const [cartPlace, updateCartPlace] = useState(0)
 
     return (
         <div className='lmj-cart'>
