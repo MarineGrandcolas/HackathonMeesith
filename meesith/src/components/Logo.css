@@ -1,11 +1,18 @@
+.overflow {
+    height: 200px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-image: url('../assets/logo_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .logo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    align-self: center;
-    margin-bottom: -645px;
 }
 
 .logo img {
@@ -37,7 +44,7 @@
     height: 180px;
     background: linear-gradient( rgba(0,0,0,1), rgba(255,255,255,0));
     opacity: 0.2;
-    transform: translate(0%, -235%);
+    transform: translate(0%, -250%);
 }
 
 .logoBg {
