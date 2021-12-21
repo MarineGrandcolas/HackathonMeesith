@@ -1,15 +1,16 @@
 import React from 'react';
-import LogoMain from 'src/assets/logo.svg';
-import LogoSlogan from 'src/assets/logo_slogan.svg';
-import LogoBg from 'src/assets/logo_bg.svg';
+import LogoMain from '../assets/logo.png';
+import LogoSlogan from '../assets/logo_slogan.png';
+import LogoBg from '../assets/logo_bg.png';
 import './Logo.css';
 
 const Logo = () => {
     return (
-        <div className="Logo">
-            <img src={LogoMain} alt="logo"/>
-            <img src={LogoBg} alt="logo background"/>
-            <img src={LogoSlogan} alt="logo slogan"/>
+        <div className="logo">
+            <img className="logoMain" src={LogoMain} alt="logo"/>
+                <img className="logoSlogan" src={LogoSlogan} alt="logo slogan"/>
+                <div className="blackSquare"></div>
+            <img className="logoBg" src={LogoBg} alt="logo background"/>
         </div>
     )
 }

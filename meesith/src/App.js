@@ -1,13 +1,12 @@
-import Logo from "./components/Logo";
+import Home from "./screen/Home";
 import ReactDOM from "react-dom";
 import './App.css';
 
-function App() {
-  return (
+const App = () => {
+    return(
     <div>
-      <Logo/>
-    </div>
-  );
+      <Home/>
+    </div>)
 }
 
 export default App;
