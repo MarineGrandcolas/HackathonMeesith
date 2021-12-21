@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.lmj-cart {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    margin: 0;
+    color: black;
+}
+
+h2 {
+    font-size: 250%;
+    text-align: center;
+}
+
+h3 {
+    text-align: right;
+    padding: 5%
+}
+
+.clone {
+    padding: 10%;
+}
+
+
+.place {
+    padding: 10%;
+}
