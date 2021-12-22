@@ -2,7 +2,7 @@ import React from "react"
 import Logo from "../components/Logo"
 import {Link} from "react-router-dom"
 import { useState } from 'react'
-import "../components/Cart.css" 
+import "./Cart.css" 
 // import { useRouteMatch } from "react-router-dom"
 
 function Cart({cart, updateCart, cartPlace, updateCartPlace}) {
