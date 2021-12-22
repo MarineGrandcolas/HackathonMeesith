@@ -1,0 +1,15 @@
+.CardPlacesImg {
+	width: 70%;
+	height: auto;
+}
+
+.CardTitle {
+	text-decoration: none;
+	color: black;
+}
+
+.CardTitle-box {
+	
+	border: 1px solid black;
+	border-radius: 10px;
+}
