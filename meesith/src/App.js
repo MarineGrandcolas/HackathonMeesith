@@ -9,6 +9,7 @@ import PlacesDetails from "./screen/PlacesDetails"
 import "./App.css"
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom" 
+import CharactersDetails from "./screen/CharactersDetails";
 
 const App = () => {
     const [cart, updateCart] = useState(0)
@@ -17,7 +18,8 @@ const App = () => {
         <div>
             <Routes>
                 <Route path="/home" element={<Home />} />
-                <Route path="/clones" element={<Clones cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/> 
+                <Route path="/characters" element={<Clones cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/> 
+                <Route path="/characters/:id" element= {<CharactersDetails/>} />
                 <Route path="/places" element={<Places cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/> 
                 <Route path="/cart" element={<Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/>}/>
                 <Route path="/placesitems" element={<PlacesItems />} />

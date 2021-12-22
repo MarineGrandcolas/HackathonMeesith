@@ -1,9 +1,12 @@
+import React from 'react'
+import Characters from '../components/CharactersStarWars'
+
 function Clones() {
     return (
-      <div>
-Clones
-      </div>
-    );
-  }
+        <div>
+           <Characters/> 
+        </div>
+    )
+}
 
-  export default Clones;
+export default Clones
