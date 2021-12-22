@@ -6,6 +6,7 @@ import Places from "./screen/Places"
 import Cart from "./screen/Cart"
 import "./App.css"
 import { useState } from 'react'
+import { Routes, Route } from "react-router-dom"
 
 const App = () => {
     const [cart, updateCart] = useState(0)
@@ -16,7 +17,12 @@ const App = () => {
             <Clones cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />
             <Contact />
             <Places cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />  */}
-            <Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/> 
+            {/* <Cart />  */}
+            <Routes>
+                <Route path="/clones" element={<Clones/>}/> 
+                <Route path="/places" element={<Places/>}/> 
+                <Route path="/cart" element={<Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/>}/> 
+            </Routes>
         </div>
     </div>)
 }
