@@ -24,6 +24,9 @@ const App = () => {
                 <Route path="/cart" element={<Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/>}/>
                 <Route path="/placesitems" element={<PlacesItems />} />
                 <Route path="/placesitems/:id" element={<PlacesDetails />} /> 
+                <Route path='/clones' element={<Clones/>}></Route>
+                <Route path='/contact' element={<Contact/>}></Route>
+
             </Routes>
         </div>
     </div>)
