@@ -1,4 +1,5 @@
 import React from "react";
+
 import leftArrow from "./assets/left-arrow.svg";
 import rightArrow from "./assets/right-arrow.svg";
 
@@ -12,6 +13,7 @@ function BtnSlider({ direction, moveSlide }) {
       <img alt="btn icons" src={direction === "next" ? rightArrow : leftArrow} />
     </button>
   );
+
 }
 
 export default BtnSlider

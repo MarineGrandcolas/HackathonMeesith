@@ -1,0 +1,11 @@
+.Characters h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.GaleryCharacters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

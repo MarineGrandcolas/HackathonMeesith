@@ -1,11 +1,13 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -21,7 +23,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(226, 213, 213);
 }
 
 .App-link {
@@ -36,3 +38,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+
