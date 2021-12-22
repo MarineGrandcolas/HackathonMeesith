@@ -8,7 +8,7 @@ import PlacesItems from './screen/PlacesItems'
 import PlacesDetails from "./screen/PlacesDetails"
 import "./App.css"
 import { useState } from 'react'
-import { Routes, Route } from "react-router-dom" 
+import { Routes, Route } from "react-router-dom"
 import CharactersDetails from "./screen/CharactersDetails";
 
 const App = () => {
@@ -17,13 +17,16 @@ const App = () => {
     return ( <div>
         <div>
             <Routes>
-                <Route path="/home" element={<Home />} />
-                <Route path="/characters" element={<Clones cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/> 
+                <Route path="/" element={<Home />} />
+                <Route path="/characters" element={<Clones cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/>
                 <Route path="/characters/:id" element= {<CharactersDetails/>} />
-                <Route path="/places" element={<Places cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/> 
+                <Route path="/places" element={<Places cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace} />}/>
                 <Route path="/cart" element={<Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/>}/>
                 <Route path="/placesitems" element={<PlacesItems />} />
-                <Route path="/placesitems/:id" element={<PlacesDetails />} /> 
+                <Route path="/placesitems/:id" element={<PlacesDetails />} />
+                <Route path='/clones' element={<Clones/>}></Route>
+                <Route path='/contact' element={<Contact/>}></Route>
+
             </Routes>
         </div>
     </div>)

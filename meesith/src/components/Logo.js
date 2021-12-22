@@ -10,7 +10,6 @@ const Logo = () => {
             <img className="logoMain" src={LogoMain} alt="logo"/>
                 <img className="logoSlogan" src={LogoSlogan} alt="logo slogan"/>
                 <div className="blackSquare"></div>
-    
         </div>
         </div>
     )

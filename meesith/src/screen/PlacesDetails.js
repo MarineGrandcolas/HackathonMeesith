@@ -1,4 +1,4 @@
-import Places from '../assetsPlanets'
+import Places from './AssetsPlanets'
 import {useParams} from "react-router-dom"
 import {useState, useEffect} from "react"
 
@@ -13,14 +13,13 @@ const PlacesDetails = () => {
     }
     getData()
     }, [])
-    
+
 
     return (
         <div>
             <h2>{place.name}</h2>
             <img src={place.image} alt = {place.name} />
             <p>{place.description}</p>
-            
         </div>
     )
 }

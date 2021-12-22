@@ -3,7 +3,7 @@ import {
     useEffect
 } from "react"
 import ButtonSlider from './ButtonSlider'
-import Places from "../assetsPlanets"
+import Places from "../screen/AssetsPlanets"
 import "./Slider.css"
 
 

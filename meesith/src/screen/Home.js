@@ -2,9 +2,9 @@ import React from "react"
 import Logo from "../components/Logo";
 import CarrouselClones from '../components/CarrouselClones';
 import PresProject from "../components/PresProject"
+import Navbar from '../components/Navbar'
+import Slider from "../components/Slider";
 import "./Home.css";
-import Places from 'assetsPlanets';
-import Slider from "./components/Slider";
 
 const Home = () => {
     return (
@@ -14,11 +14,10 @@ const Home = () => {
         <h2>Clones du mois</h2>
         <CarrouselClones/>
         <Slider />
+        <Navbar/>
     </div>
 
   )
-
-
 }
 
 export default Home
