@@ -1,10 +1,12 @@
 import './App.css';
-import Planets from './components/APIPlaces'
+import Planets from './components/APIPlaces';
+import Slider from "./components/Slider";
 
 function App() {
   return (
     <div className="App">
-     <Planets />
+     {/* <Planets /> */}
+     <Slider />
     </div>
   );
 }
