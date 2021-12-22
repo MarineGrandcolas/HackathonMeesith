@@ -1,10 +1,13 @@
 import "./Card.css"
 
-const Card = ({ name, image, characters }) => {
+const Card = ({ name, image, id }) => {
+	const idCharacter = `/characters/${id}`
 	return (
-		<div>
-				<p>{name}</p>
+		<div className="cards">
+		
+				<p className="pCardName">{name}</p>
 				<img className="CardImg" src={image} alt={name} />
+                <button className="buttonCard">Commandez votre Clone</button>
 		</div>
 	)
 }

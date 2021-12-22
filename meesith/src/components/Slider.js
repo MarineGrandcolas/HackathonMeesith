@@ -3,7 +3,7 @@ import {
     useEffect
 } from "react"
 import ButtonSlider from './ButtonSlider'
-import Places from "./APIPlaces"
+import Places from "../assetsPlanets"
 import "./Slider.css"
 
 
@@ -44,7 +44,7 @@ export default function Slider() {
                     className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
                     >
                         <img alt="images" src={place.image}/>
-                        <h1>{place.name}</h1>
+                        <h1 className="">{place.name}</h1>
                         {/* <p>{place.description}</p> */}
                     </div>
                     // <div>key={place.id}

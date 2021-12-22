@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 /* .GaleryPlanets {
     display : flex;
     flex-direction: row;
     align-content: center;
 } */
+=======
+.GaleryPlanets {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+
+>>>>>>> e0f48cb7741e6941ca15f6511e262690daadcd35
