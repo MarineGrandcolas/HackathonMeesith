@@ -1,9 +1,8 @@
 import React from "react";
-// import "./Slider.css";
 import leftArrow from "./assets/left-arrow.svg";
 import rightArrow from "./assets/right-arrow.svg";
 
-export default function BtnSlider({ direction, moveSlide }) {
+function BtnSlider({ direction, moveSlide }) {
   console.log(direction, moveSlide);
   return (
     <button
@@ -14,3 +13,5 @@ export default function BtnSlider({ direction, moveSlide }) {
     </button>
   );
 }
+
+export default BtnSlider

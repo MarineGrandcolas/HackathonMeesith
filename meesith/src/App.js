@@ -5,7 +5,7 @@ import CarrouselClones from './components/CarrouselClones';
 function App() {
   return (
     <div className="App">
-      {/* <Characters/> */}
+      <h2>Clones du mois</h2>
       <CarrouselClones/>
     </div>
   );

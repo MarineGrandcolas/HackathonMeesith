@@ -9,7 +9,7 @@ import "./CarrouselClones.css"
 
 
 
-export default function Slider() {
+function Slider() {
 
     const [slideIndex, setSlideIndex] = useState(1)
 
@@ -31,10 +31,6 @@ export default function Slider() {
         }
     }
 
-    const moveDot = index => {
-        setSlideIndex(index)
-    }
-
     return (
         <div className="container-slider">
             {sliderData.map((character, index) => {
@@ -50,14 +46,8 @@ export default function Slider() {
             <ButtonSlider moveSlide={nextSlide} direction={"next"} />
             <ButtonSlider moveSlide={prevSlide} direction={"prev"}/>
 
-            <div className="container-dots">
-                {Array.from({length: 5}).map((index) => (
-                    <div
-                    onClick={() => moveDot(index + 1)}
-                    className={slideIndex === index + 1 ? "dot active" : "dot"}
-                    ></div>
-                ))}
-            </div>
         </div>
     )
 }
+
+export default Slider
