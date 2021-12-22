@@ -18,7 +18,7 @@ const PlacesDetails = () => {
     return (
         <div>
             <h2>{place.name}</h2>
-            <img src={place.image} alt = {place.name} />
+            <img className="imgDetails" src={place.image} alt = {place.name} />
             <p>{place.description}</p>
             
         </div>

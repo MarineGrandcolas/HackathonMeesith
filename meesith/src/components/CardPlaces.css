@@ -1,15 +1,24 @@
 .CardPlacesImg {
 	width: 70%;
 	height: auto;
+	margin-bottom: 40px;
 }
 
 .CardTitle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-decoration: none;
 	color: black;
 }
 
+h1 {
+	text-align: center;
+	font-family: 'Montserrat';
+}
 .CardTitle-box {
-	
+
+	width: 100%;
 	border: 1px solid black;
 	border-radius: 10px;
 }
