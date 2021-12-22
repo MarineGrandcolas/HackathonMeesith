@@ -6,7 +6,7 @@
     font-family: 'Montserrat';
     margin: 0;
     color: whitesmoke;
-    background: rgb(44, 27, 27);
+    background: linear-gradient(180deg, rgb(1, 20, 54) 0%, rgba(6,25,66,1) 50%, rgba(187, 7, 15, 0.8) 100%);
 }
 
 h2 {
@@ -105,8 +105,9 @@ h3 {
 
 .ici{
     color:rgb(255, 255, 255);
+    text-decoration: none;
 }
-.ici:hover{
-    
+.ici:hover{    
     cursor: pointer;
+    font-weight: bold;
 }
