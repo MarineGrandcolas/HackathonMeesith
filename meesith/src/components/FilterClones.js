@@ -1,4 +1,6 @@
 import React from 'react'
+import "./FilterClones.css"
+
 
 function FilterClones() {
     return (
@@ -6,7 +8,7 @@ function FilterClones() {
 
             <div className='FilterHeigth'>
                 <select name="pets" id="">
-                    <option value="">Selectioné votre tailles</option>
+                    <option value="">Selectionnez votre taille</option>
                     <option value="dog">...</option>
                     <option value="cat">...</option>
                     
@@ -15,7 +17,7 @@ function FilterClones() {
 
             <div className='FilterMass'>
                 <select name="pets" id="">
-                    <option value="">Selectioné votre poids</option>
+                    <option value="">Selectionnez votre poids</option>
                     <option value="dog">...</option>
                     <option value="cat">...</option>
                     
@@ -24,7 +26,7 @@ function FilterClones() {
 
             <div className='FilterSpecies'>
                 <select name="pets" id="">
-                    <option value="">Selectioné votre genre</option>
+                    <option value="">Selectionnez votre genre</option>
                     <option value="dog">Humain</option>
                     <option value="cat">Droid</option>
                     <option value="dog">wookiee</option>

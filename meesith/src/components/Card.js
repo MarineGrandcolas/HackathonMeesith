@@ -7,7 +7,7 @@ const Card = ({ name, image, id }) => {
 		
 				<p className="pCardName">{name}</p>
 				<img className="CardImg" src={image} alt={name} />
-                <button className="buttonCard">Commender votre Clone</button>
+                <button className="buttonCard">Commandez votre Clone</button>
 		</div>
 	)
 }

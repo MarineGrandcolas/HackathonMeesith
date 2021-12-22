@@ -1,7 +1,7 @@
 import React from 'react'
 import Characters from '../components/CharactersStarWars'
 
-function clones() {
+function Clones() {
     return (
         <div>
            <Characters/> 
@@ -9,4 +9,4 @@ function clones() {
     )
 }
 
-export default clones
+export default Clones

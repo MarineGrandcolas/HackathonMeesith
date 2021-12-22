@@ -30,7 +30,7 @@ const Characters = () => {
 			
 		
 		<div className="Characters">
-			<h1>Choisisez votre clone !</h1>
+			<h1>Choisissez votre clone !</h1>
 			<div className="FilterCharacters">
 				<FilterClones/>
 			</div>
