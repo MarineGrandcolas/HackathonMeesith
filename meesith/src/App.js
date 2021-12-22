@@ -4,6 +4,8 @@ import Clones from "./screen/Clones"
 import Contact from "./screen/Contact"
 import Places from "./screen/Places"
 import Cart from "./screen/Cart"
+import PlacesItems from './screen/PlacesItems'
+import PlacesDetails from "./screen/PlacesDetails"
 import "./App.css"
 import { useState } from 'react'
 import { Routes, Route } from "react-router-dom"
@@ -21,7 +23,9 @@ const App = () => {
             <Routes>
                 <Route path="/clones" element={<Clones/>}/> 
                 <Route path="/places" element={<Places/>}/> 
-                <Route path="/cart" element={<Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/>}/> 
+                <Route path="/cart" element={<Cart cart={cart} updateCart={updateCart} cartPlace={cartPlace} updateCartPlace={updateCartPlace}/>}/>
+                <Route path="/placesitems" element={<PlacesItems />} />
+                <Route path="/placesitems/:id" element={<PlacesDetails />} /> 
             </Routes>
         </div>
     </div>)
